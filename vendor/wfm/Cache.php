@@ -21,7 +21,16 @@ class Cache {
             $content = unserialize(file_get_contents($file));
             if(time() <= $content['end_time']) {
                 return $content['data'];
-            }
+            } 
+            unlink($file);
+        }
+        return false;
+    }
+
+    public function delete($key) {
+        $file = CACHE . '/' . md5($key) . '.txt';
+        if(file_exists($key)) {
+            unlink($file);
         }
     }
 }

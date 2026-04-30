@@ -6,11 +6,17 @@ use app\models\Main;
 use RedBeanPHP\R;
 use wfm\App;
 use wfm\Language;
+use wfm\Cache;
 
 class MainController extends AppController
 {  
     public function indexAction()
     {
+        $test = 'hello lexa';
+        $cache = Cache::getInstance();
+        //$cache->set('test', $test, 20);
+        var_dump($cache->get('test'));
+        //var_dump($test);
         $lang = App::$app->getProperty('language');
         $slides = R::findAll('slider');
         $products = $this->model->get_hits($lang, 6);
