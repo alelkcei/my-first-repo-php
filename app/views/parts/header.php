@@ -78,33 +78,10 @@ use wfm\App;
 								<?php 
 									new \app\widgets\Menu\Menu([
 										'class' => 'navbar-nav ms-auto mb-2 mb-lg-0', 
-										'cache' => 0,
+										'cache' => 5,
 										])
 								?>
 
-								<!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-									<li class="nav-item">
-										<a class="nav-link" href="category.html"><?php __('tpl_computers') ?></a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="category.html"><?php __('tpl_tablets') ?></a>
-									</li>
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<?php __('tpl_laptops') ?>
-										</a>
-										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<li><a class="dropdown-item" href="category.html">Mac</a></li>
-											<li><a class="dropdown-item" href="category.html">Windows</a></li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="category.html"><?php __('tpl_phones') ?></a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="category.html"><?php __('tpl_cameras') ?></a>
-									</li>
-								</ul> -->
 							</div>
 							
 						</div>

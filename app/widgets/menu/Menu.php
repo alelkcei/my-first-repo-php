@@ -92,5 +92,4 @@ class Menu {
         require $this->tpl;
         return ob_get_clean();
     }
-    
 }

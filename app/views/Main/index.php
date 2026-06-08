@@ -28,7 +28,7 @@
 
 		</div>
 		<?php endif ?>
-
+		<?php //debug($_SESSION['cart']) ?>
 		<?php if(!empty( $products)) : ?>
 		<section class="featured-products">
 			<div class="container">
