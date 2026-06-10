@@ -54,6 +54,7 @@
 		<script>
 			const PATH = '<?= PATH ?>';
 		</script>
+		// MODAL 
 		<div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl">
 				<div class="modal-content">
